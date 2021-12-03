@@ -3,6 +3,22 @@ using namespace std;
 
 char before(char x){
 	//Write your function definition here
+	char op;
+	op=x-1;
+	if(x>='A' and x<='Z')
+		{if(x=='A')
+			{
+				return 'Z';
+			}else
+			{
+				return op;
+			}
+		
+		}
+	else{
+		return '0';
+	}
+		
 }
 
 int main(){
@@ -17,3 +33,4 @@ int main(){
 	cout << before('c') << "\n";
 	return 0;
 }
+	
